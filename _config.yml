@@ -42,7 +42,7 @@ defaults:
       path: "" # an empty string here means all files in the project
       type: "posts" # for posts or another collection of files
     values:
-      layout: "default"
+      layout: "post"
 
 # MULTILANGUAGE
 # languages: ["en", "ru"]
