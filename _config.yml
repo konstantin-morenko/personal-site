@@ -45,7 +45,7 @@ defaults:
       layout: "post"
   -
     scope:
-      path: "latex" # an empty string here means all files in the project
+      path: "" # an empty string here means all files in the project
     values:
       layout: "page"
 
