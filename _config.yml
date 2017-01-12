@@ -43,6 +43,11 @@ defaults:
       type: "posts" # for posts or another collection of files
     values:
       layout: "post"
+  -
+    scope:
+      path: "latex" # an empty string here means all files in the project
+    values:
+      layout: "page"
 
 # MULTILANGUAGE
 # languages: ["en", "ru"]

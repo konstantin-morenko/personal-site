@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Основные разделы</h1>
+  {{ content }}
+  <ul class="post-list">
+    {% for page in site.pages %}
+      {% for category in page.categories %}
+        {% if category == "book-index" %}
+          <li>
+            <h2>
+              <a class="post-link" href="{{ page.url | relative_url }}">{{ page.title | escape }}</a>
+            </h2>
+          </li>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  </ul>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+</div>
