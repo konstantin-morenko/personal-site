@@ -1,6 +1,5 @@
 ---
 title: Почему Jekyll?
-layout: post
 categories: jekyll
 ---
 
