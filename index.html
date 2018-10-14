@@ -1,0 +1,46 @@
+---
+layout: default
+list_title: Записи
+---
+
+<h2>{{ page.list_title | default: "Posts" }}</h2>
+{%- for post in paginator.posts -%}
+<div class="w3-panel">
+  {%- assign date_format = site.date_format -%}
+    <h3>
+      <a href="{{ post.url | relative_url }}">
+	{{ post.title | escape }}
+      </a>
+    </h3>
+    
+    <div>{{ post.date | date: date_format }} |
+    {% for category in post.categories %}
+    <span>{{ category }}</span>
+    {% endfor %}
+    </div>
+    
+    <div>
+    <em>{{ post.excerpt }}</em>
+    </div>
+</div>
+{%- endfor -%}
+
+<p>Подпишитесь <a href="{{ "/feed.xml" | relative_url }}">через RSS</a></p>
+
+<div class="w3-bar w3-center">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="w3-button w3-round">
+      < Назад
+    </a>
+  {% else %}
+  {% endif %}
+  <span class="page_number ">
+    {{ paginator.page }} / {{ paginator.total_pages }}
+  </span>
+  {% if paginator.next_page %}
+  <a href="{{ paginator.next_page_path }}" class="w3-button w3-round">
+    Вперед >
+  </a>
+  {% else %}
+  {% endif %}
+</div>

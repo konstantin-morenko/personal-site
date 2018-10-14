@@ -1,0 +1,8 @@
+- hyperlink: /
+  description: Главная
+
+- hyperlink: /posts-by-category.html
+  description: Категории
+
+- hyperlink: /blog/about.html
+  description: О блоге

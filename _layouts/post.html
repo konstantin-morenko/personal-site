@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+{%- assign date_format = site.date_format -%}
+<h2>
+  {{ page.title | escape }}
+</h2>
+    
+{{ page.date | date: date_format }} |
+{% for category in page.categories %}
+<span>{{ category }}</span>
+{% endfor %}
+
+<div>
+  <em>
+    {{ page.excerpt }}
+  </em>
+</div>
+
+{{ content }}

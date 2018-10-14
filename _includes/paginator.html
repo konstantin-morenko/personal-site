@@ -1,0 +1,43 @@
+{%- if site.posts.size > 0 -%}
+<h2>{{ page.list_title | default: "Posts" }}</h2>
+{%- for post in site.posts -%}
+<div class="w3-panel">
+  {%- assign date_format = site.date_format -%}
+    <h3>
+      <a href="{{ post.url | relative_url }}">
+	{{ post.title | escape }}
+      </a>
+    </h3>
+    
+    <div>{{ post.date | date: date_format }} |
+    {% for category in post.categories %}
+    <span>{{ category }}</span>
+    {% endfor %}
+    </div>
+    
+    <div>
+    <em>{{ post.excerpt }}</em>
+    </div>
+</div>
+{%- endfor -%}
+
+<p>Подпишитесь <a href="{{ "/feed.xml" | relative_url }}">через RSS</a></p>
+{%- endif -%}
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">
+      Previous
+    </a>
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number ">
+    Page: {{ paginator.page }} of {{ paginator.total_pages }}
+  </span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% else %}
+    <span class="next ">Next</span>
+  {% endif %}
+</div>

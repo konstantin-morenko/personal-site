@@ -1,0 +1,7 @@
+<div class="w3-container w3-margin w3-center">
+  {% for link in site.data.theme.menu %}
+  <a href="{{ link.hyperlink }}" class="w3-button w3-round">
+    {{ link.description }}
+  </a>
+  {% endfor %}
+</div>

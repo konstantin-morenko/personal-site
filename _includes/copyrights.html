@@ -1,0 +1,10 @@
+<div class="w3-container">
+  {% assign copyrights = site.data.theme.copyrights %}
+  <p>Copyrights © {{ copyrights.years }}
+    {{ copyrights.owner }}
+    (<a href="mailto:{{ copyrights.email }}">{{ copyrights.email }}</a>).
+    Вы можете использовать и распространять содержимое согласно лицензии
+    <a href="{{ copyrights.licensehyperlink }}">{{ copyrights.licensename }}</a>
+    если не указано иное.
+  </p>
+</div>

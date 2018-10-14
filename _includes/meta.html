@@ -1,0 +1,6 @@
+<ul class="w3-ul">
+  <li><a href="{% link blog/ideas-for-blog.md %}">Идеи по развитию блога</a></li>
+  {% for link in site.data.theme.meta %}
+  <li><a href="{{ link.hyperlink }}">{{ link.description }}</a></li>
+  {% endfor %}
+</ul>
