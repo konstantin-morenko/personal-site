@@ -33,14 +33,20 @@ list_title: Записи
       < Назад
     </a>
   {% else %}
+    <a class="w3-button w3-round w3-disabled">
+      < Назад
+    </a>
   {% endif %}
-  <span class="page_number ">
-    {{ paginator.page }} / {{ paginator.total_pages }}
-  </span>
+    <span class="page_number ">
+      {{ paginator.page }} / {{ paginator.total_pages }}
+    </span>
   {% if paginator.next_page %}
-  <a href="{{ paginator.next_page_path }}" class="w3-button w3-round">
-    Вперед >
-  </a>
+    <a href="{{ paginator.next_page_path }}" class="w3-button w3-round">
+      Вперед >
+    </a>
   {% else %}
+    <a class="w3-button w3-round w3-disabled">
+      Вперед >
+    </a>
   {% endif %}
 </div>
