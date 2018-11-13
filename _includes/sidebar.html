@@ -6,7 +6,7 @@
   {% assign card = site.data.about.short | last %}
   <div class="">
     <div class="w3-center">
-      <img src="{{ card.image | default: '/images/about/avatar-man.jpg' }}" class="w3-container w3-margin-top w3-image w3-circle">
+      <img src="{{ card.image | default: '/images/about/avatar-man.jpg' }}" class="w3-container w3-margin-top w3-image w3-circle" style="max-width: 250px">
     </div>
     <div class="w3-margin">
       <p>{{ card.text }}</p>
