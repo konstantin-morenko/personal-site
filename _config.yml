@@ -32,6 +32,8 @@ date_format: "%Y-%m-%d"
 
 paginate: 10
 
+permalink: /:year/:month/:day/:title:output_ext
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
