@@ -1,0 +1,10 @@
+- name: Esperanto
+  aims:
+  - header: Lernu.net
+    cent: 31
+    bartext: 8/26
+    text: Пройти все 26 уроков на сайте Lernu.net
+  - header: 10 книг на Эсперанто
+    cent: 0
+    bartext: 0/10
+    text: Прочитать 10 художественных книг
