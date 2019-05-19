@@ -1,6 +1,9 @@
 - hyperlink: /
   description: Главная
 
+- hyperlink: /education/resources.html
+  description: Образование
+
 - hyperlink: /posts-by-category.html
   description: Категории
 
