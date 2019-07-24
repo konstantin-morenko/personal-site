@@ -22,6 +22,10 @@ layout: post
 
 ## Правила оформления
 
+## Гиперрсылки
+
+[ярлык]({% post_url self-improvement/2019-04-04-routine-crop %})
+
 ## Ссылки
 
 - Markdown
