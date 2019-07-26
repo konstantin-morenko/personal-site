@@ -2,20 +2,22 @@
 layout: default
 ---
 
-{%- assign date_format = site.date_format -%}
-<h2>
-  {{ page.title | escape }}
-</h2>
-    
-{{ page.date | date: date_format }} |
-{% for category in page.categories %}
-<span>{{ category }}</span>
-{% endfor %}
+<article>
 
-<div>
-  <em>
+{%- assign date_format = site.date_format -%}
+<header>
+  <h2>{{ page.title | escape }}</h2>
+    
+  <time>{{ page.date | date: date_format }}</time> |
+  {% for category in page.categories %}
+  <span>{{ category }}</span>
+  {% endfor %}
+
+  <summary>
     {{ page.excerpt }}
-  </em>
-</div>
+  </summary>
+</header>
 
 {{ content }}
+
+</article>

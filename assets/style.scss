@@ -29,5 +29,11 @@ heading {
 
 article {
     header {
+	h2 {
+	    color: $aux-color-b;
+	}
+	summary {
+	    font-style: italic;
+	}
     }
 }
