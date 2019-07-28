@@ -1,7 +1,7 @@
-<div class="w3-container w3-margin w3-center">
+<nav>
   {% for link in site.data.theme.menu %}
-  <a href="{{ link.hyperlink }}" class="w3-button w3-round">
+  <button href="{{ link.hyperlink }}">
     {{ link.description }}
-  </a>
+  </button>
   {% endfor %}
-</div>
+</nav>

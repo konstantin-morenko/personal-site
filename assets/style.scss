@@ -4,6 +4,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700);
 
 $default-border-width: 4px;
+$default-margin-width: 16px;
 
 // https://colorscheme.ru/#0051Tw0w0w0w0
 
@@ -11,8 +12,29 @@ $main-color: #FF0000;
 $aux-color-a: #FF7400;
 $aux-color-b: #CD0074;
 
+$font-color: #404040;
+
 @mixin border-top {
     border-top: $default-border-width solid $aux-color-a;
+}
+
+@mixin default-margins {
+    margin: $default-margin-width;
+}
+
+// panels margins
+@mixin panel {
+    margin: {
+	top: 16px;
+	bottom: 16px;
+    }
+    padding: {
+	left: 16px;
+	right: 16px;
+    }
+}
+p, footer {
+    @include panel;
 }
 
 body {
@@ -20,10 +42,29 @@ body {
     margin-left: auto;
     margin-right: auto;
     background:#edf0f2;
-    color:#404040;
+    color: $font-color;
     font-family:"Lato","proxima-nova","Helvetica Neue",Arial,sans-serif;
     font-weight:normal;
     font-size: 16px;
+
+    nav {
+	text-align: center;
+	@include panel;
+
+	button {
+	    margin: 8px;
+	    padding: 8px;
+	    border-radius: 8px;
+	    color: $font-color;
+	    display: inline-block;
+	    border: none;
+	    background: transparent;
+	    
+	    &:hover {
+		background-color: $aux-color-a;
+	    }
+	}
+    }
 
     footer {
 	@include border-top;
