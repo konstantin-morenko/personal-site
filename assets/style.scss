@@ -45,7 +45,22 @@ body {
     color: $font-color;
     font-family:"Lato","proxima-nova","Helvetica Neue",Arial,sans-serif;
     font-weight:normal;
-    font-size: 16px;
+    font-size: 1em;
+
+    h2 {
+	font-size: 180%;
+    }
+
+    h3 {
+	font-size: 150%;
+    }
+
+    h4 {
+	font-size: 120%;
+    }
+
+    h5 {
+    }
 
     nav {
 	text-align: center;
@@ -66,6 +81,7 @@ body {
 	}
     }
 
+
     footer {
 	@include border-top;
     }
@@ -79,6 +95,15 @@ a {
 }
 
 p {
+}
+
+ul {
+    list-style-type: circle;
+
+    li {
+	margin-left: 32px;
+	margin-right: 32px;
+    }
 }
 
 heading {
