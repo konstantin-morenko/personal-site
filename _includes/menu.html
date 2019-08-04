@@ -1,7 +1,7 @@
 <nav>
   {% for link in site.data.theme.menu %}
-  <button href="{{ link.hyperlink }}">
+  <a href="{{ link.hyperlink }}">
     {{ link.description }}
-  </button>
+  </a>
   {% endfor %}
 </nav>
