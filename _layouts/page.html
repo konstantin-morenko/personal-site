@@ -2,12 +2,15 @@
 layout: default
 ---
 
-<h2>
-  {{ page.title | escape }}
-</h2>
+<article>
+<header>
+  <h2>{{ page.title | escape }}</h2>
     
 {% for category in page.categories %}
 <span>{{ category }}</span>
 {% endfor %}
+</header>
 
 {{ content }}
+
+</article>
