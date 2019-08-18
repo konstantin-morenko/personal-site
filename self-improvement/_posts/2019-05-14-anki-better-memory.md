@@ -74,5 +74,5 @@ layout: post
 [spaced]: https://ru.wikipedia.org/wiki/Интервальные_повторения
 [anki]: https://apps.ankiweb.net/
 [lernu]: https://lernu.net/ru
-[routine]: {% post_url self-improvement/2019-04-04-routine-crop %}
+[routine]: {% post_url routine/2019-04-04-routine-crop %}
 [limit]: {% post_url self-improvement/2019-05-05-interval-repetitions %}

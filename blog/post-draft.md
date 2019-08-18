@@ -24,7 +24,7 @@ layout: post
 
 ## Гиперрсылки
 
-[ярлык]({% post_url self-improvement/2019-04-04-routine-crop %})
+[ярлык]({% post_url routine/2019-04-04-routine-crop %})
 
 ## Ссылки
 

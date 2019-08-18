@@ -8,7 +8,7 @@ layout: post
 ---
 
 Возвращаясь к теме рутины от [2019-04-04]({% post_url
-self-improvement/2019-04-04-routine-crop %}).
+routine/2019-04-04-routine-crop %}).
 
 В последние пару недель я стал пользоваться приложением
 [Fabulous](https://www.thefabulous.co/) для того, чтобы организовать
